@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikos & Vicky's Wedding</title>
+    <style>
+        /* Base Styles for Desktop and Large Screens */
+        body {
+            font-family: 'Cardo', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #4a2c2f;
+            text-align: center;
+            line-height: 1.8;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 1rem 0 6rem 0; /* Added extra bottom padding */
+            position: relative;
+        }
+        header .floral-left,
+        header .floral-right {
+            position: absolute;
+            top: 10px;
+            width: 12%; /* Proper scaling for desktop */
+            max-width: 150px; /* Prevent oversized scaling */
+            height: auto;
+        }
+
+        header .floral-left {
+            left: 5%; /* Keep it aligned to the left */
+        }
+
+        header .floral-right {
+            right: 5%; /* Keep it aligned to the right */
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 2rem 0 1rem 0; /* Space for better alignment */
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 3rem auto; /* Extra space to push text further down */
+            padding-top: 2rem; /* Ensure separation from floral decorations */
+            max-width: 90%; /* Restrict width for smaller screens */
+        }
+
+        @media (max-width: 1024px) {
+            header .floral-left,
+            header .floral-right {
+                top: 20px; /* Increase spacing for smaller screens */
+                width: 15%; /* Adjust size for medium screens */
+                max-width: 130px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header .floral-left {
+                top: 20px;
+                left: 10px;
+                width: 20%;
+            }
+
+            header .floral-right {
+                top: 20px;
+                right: 10px;
+                width: 20%;
+            }
+
+            header h1 {
+                font-size: 2rem; /* Adjust title for smaller screens */
+                margin-top: 3rem; /* Push the title lower */
+            }
+
+            header p {
+                font-size: 1rem; /* Smaller font size for mobile */
+                margin-top: 4rem; /* Ensure clear separation from decorations */
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Allows wrapping for smaller screens */
+        }
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #4a2c2f;
+            font-size: 1.1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background-color: #fbe4d9; /* Lighter peach */
+            border-radius: 10px;
+        }
+        h2 {
+            color: #4a2c2f;
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+        h2::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: #243447; /* Navy blue */
+            margin-top: 0.5rem;
+        }
+        a {
+            color: #4a2c2f;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: #fdf0eb; /* Even lighter peach for highlighting */
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+        }
+        a:hover {
+            background-color: #e3866a;
+            color: #ffffff;
+        }
+        footer {
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #d4e9f9; /* Baby blue */
+            color: #4a2c2f;
+        }
+
+        /* Responsive Styles for Mobile Screens */
+        @media (max-width: 768px) {
+            body {
+                font-size: 90%; /* Slightly smaller font size */
+            }
+            header h1 {
+                font-size: 2rem; /* Scale down the title */
+            }
+            header p {
+                font-size: 1rem; /* Adjust subtitle size */
+                margin-top: 4rem; /* Add spacing below the names */
+            }
+            nav {
+                flex-direction: column; /* Stack navigation links vertically */
+            }
+            nav a {
+                margin: 0.5rem 0; /* Add spacing between links */
+            }
+            .container {
+                padding: 1rem; /* Reduce padding */
+            }
+            h2 {
+                font-size: 1.5rem; /* Scale down section titles */
+            }
+            footer {
+                font-size: 0.9rem; /* Adjust footer font size */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="floral-left.png" alt="Floral Decoration" class="floral-left">
+        <img src="floral-right.png" alt="Floral Decoration" class="floral-right">
+        <h1>Nikos & Vicky</h1>
+
+        <p><strong>Dear Friends and Family, we are delighted to invite you to our special day!</p>
+        <nav>
+            <a href="#details">Details</a>
+            <a href="#distances">Distances</a>
+            <a href="#accommodations">Accommodations</a>
+            <a href="#travel">Reach Litochoro</a>
+            <a href="#rsvp">RSVP</a>
+            <a href="#registry">Wedding Registry</a>
+        </nav>
+    </header>
+
+    <div id="details" class="container">
+        <h2>Wedding Details</h2>
+        <p><strong>Date:</strong> Saturday, 2nd of August 2025</p>
+        <p><strong>Time:</strong> 19:30</p>
+        <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/Cvt8XJQunaDWo4a5A" target="_blank">Saints Theodore Church, Gritsa Litochoro</a></p>
+        <p>Following the ceremony, a wedding reception will take place at <a href="https://www.google.com/maps/place/Poseidon+Palace+Hotel/@40.0398043,22.5812646,17z/data=!4m10!3m9!1s0x1358097bde1a446d:0xc59965f2d228b1f7!5m3!1s2025-01-29!4m1!1i2!8m2!3d40.0398043!4d22.5838395!16s%2Fg%2F1tg3dkz2" target="_blank">Poseidon Palace Hotel</a>.</p>
+    </div>
+
+    <div id="distances" class="container">
+        <h2>Distances Between Locations</h2>
+        <p>The distance by car between the city center of Litochoro and the church is approximately 10-12 minutes. </p>
+        <p>From the church to Poseidon Palace Hotel, it is a 15-minute ride.</p>
+        <p>The way back from Poseidon Palace to the city center of Litochoro is around 18 minutes by car. </p>
+    </div>
+
+
+    <div id="accommodations" class="container">
+        <h2>Accommodation</h2>
+        <p><a href="https://www.google.com/maps/place/Poseidon+Palace+Hotel/@40.0398043,22.5812646,17z/data=!4m10!3m9!1s0x1358097bde1a446d:0xc59965f2d228b1f7!5m3!1s2025-01-29!4m1!1i2!8m2!3d40.0398043!4d22.5838395!16s%2Fg%2F1tg3dkz2" target="_blank">Poseidon Palace Hotel (wedding reception location)(Leptokaria)</a></p>
+        <p><a href="https://www.google.com/maps/place/Hotel+Litohoro+Olympus+Resort+Villas+%26+Spa/@40.0971279,22.5635557,17z/data=!4m10!3m9!1s0x135808f94953a87b:0x2431eeb531cfe5e6!5m3!1s2025-01-29!4m1!1i2!8m2!3d40.0971279!4d22.5661306!16s%2Fg%2F1tjxzsmc" target="_blank">Hotel Litohoro Olympus Resort Villas & Spa (Plaka Litochoro)</a></p>
+        <p><a href="https://www.google.com/maps/place/Cavo+Olympo/@40.1064788,22.5571893,17z/data=!4m10!3m9!1s0x135808ee2b3f475f:0xb49af9fd9f9e4f06!5m3!1s2025-01-29!4m1!1i2!8m2!3d40.1064788!4d22.5597642!16s%2Fg%2F1hc1gf3ms" target="_blank">Cavo Olympo (Plaka Litochoro)</a></p>
+        <p><a href="https://www.google.com/maps/place/Dion+Palace+Resort+%26+Spa/@40.1506883,22.543712,17z/data=!4m10!3m9!1s0x13580ede4fa4129d:0xbf6ceba6c940536c!5m3!1s2025-01-29!4m1!1i2!8m2!3d40.1506883!4d22.5462869!16s%2Fg%2F1thlkc3q" target="_blank">Dion Palace Resort & Spa (Gritsa Litochoro)</a></p>
+        <p><a href="https://www.google.com/maps/place/Mythic+Valley/@40.1045992,22.5005742,17z/data=!4m10!3m9!1s0x13580ede45f5a4f9:0x55ee7f1d06542939!5m3!1s2025-01-29!4m1!1i2!8m2!3d40.1045992!4d22.5031491!16s%2Fg%2F11f5lycd7l" target="_blank">Mythic Valley (Center of Litochoro)</a></p>
+        <p><a href="https://www.google.com/maps/place/Hotel+Olympus+Mediterranean/@40.102979,22.4994441,17z/data=!4m10!3m9!1s0x13580ede489d6e83:0x1ebf7e3f7f697b5!5m3!1s2025-01-29!4m1!1i2!8m2!3d40.102979!4d22.502019!16s%2Fg%2F1tdj1hk6" target="_blank">Hotel Olympus Mediterranean (Litochoro)</a></p>
+        <p><a href="https://www.google.com/maps/place/Enipeas+Rooms/@40.1046154,22.4981005,17z/data=!4m10!3m9!1s0x13580edfd77cc465:0xa8a8666e2345450!5m3!1s2025-01-29!4m1!1i2!8m2!3d40.1046154!4d22.5006754!16s%2Fg%2F11clkvyl71" target="_blank">Enipeas Rooms (Center of Litochoro)</a></p>
+        <p><a href="https://www.google.com/maps/place/Robolo+Boutique+Hotel/@40.1025219,22.4979625,17z/data=!4m10!3m9!1s0x13580ee0a03fba3f:0x9ec843ae89c1c31b!5m3!1s2025-01-29!4m1!1i2!8m2!3d40.1025219!4d22.5005374!16s%2Fg%2F11fy5df_3j" target="_blank">Robolo Boutique Hotel (Litochoro)</a></p>
+        <p><a href="https://www.google.com/maps/place/Afroditi/@40.104309,22.4983234,17z/data=!4m10!3m9!1s0x13580edfd0d1514d:0x658eb60f4f35b451!5m3!1s2025-01-29!4m1!1i2!8m2!3d40.104309!4d22.5008983!16s%2Fg%2F11c2j4cq18" target="_blank">Afroditi Arhontiko (Center of Litochoro)</a></p>
+        <p><a href="https://www.google.com/maps/place/Palio+Litohoro+The+Countryside+Lodge/@40.1014719,22.4937194,17z/data=!4m10!3m9!1s0x13580ee6c7f46a1f:0x1420988638ba2dd2!5m3!1s2025-01-29!4m1!1i2!8m2!3d40.1014719!4d22.4962943!16s%2Fg%2F1td7wbx2" target="_blank">Palio Litochoro The Countryside Lodge (Litochoro)</a></p>
+        <p><a href="https://www.google.com/maps/place/Hotel+Olympos/@40.0603547,22.5654379,17z/data=!4m10!3m9!1s0x135809176edeca8f:0x9c872ef609696232!5m3!1s2025-01-29!4m1!1i2!8m2!3d40.0603547!4d22.5680128!16s%2Fg%2F11g_zfn_pk" target="_blank">Hotel Olympos (Leptokaria)</a></p>
+
+<p> *These are just some recommendations to make the search a bit easier. Please feel free to book any accommodation you like.</p>
+    </div>
+
+    <div id="travel" class="container">
+        <h2>How to Reach Litochoro?</h2>
+        <p><strong>By Car:</strong> Rent a car from SKG Airport and drive approximately 1.5 hours along the E75 highway.</p>
+        <p><strong>By Train:</strong> Take a train from Thessaloniki Railway Station to Litochoro Station, then a short taxi ride into town.</p>
+        <p><strong>By Bus:</strong> Use the KTEL bus service from Thessaloniki Bus Station to Litochoro. The trip takes about 1.5 hours.</p>
+        <p><strong>By Taxi:</strong> Hire a taxi directly from SKG Airport to Litochoro for convenience.</p>
+<p> *We strongly advise you to have a car the day of the wedding, as the locations of interest are not whithin walking distance. </p>
+
+    </div>
+
+    <div id="rsvp" class="container">
+        <h2>RSVP</h2>
+        <p>Please let us know if you will be able to attend. You can reach us at:</p>
+        <p>Nikos: +30 697 755 1052</p>
+        <p>Vicky: +30 694 021 9293</p>
+        <p> Also available on WhatsApp! </p>
+    </div>
+
+    <div id="registry" class="container">
+        <h2>Optional Wedding Registry</h2>
+        <p>IBAN: GR27 0110 3940 0000 3946 0253 907</p>
+        <p> BIC:ETHNGRAA , name: Troiris Nikolaos Athanasios
+    </div>
+
+    <footer>
+        <p>&copy; 2025 | Nikos & Vicky's Wedding. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+
